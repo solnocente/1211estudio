@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: #C8A59A;
+    font-family:'Playfair Display', serif;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: left;
+    padding: 2rem;
+    margin-top: 10rem;
+}
+
+h2 {
+    color: rgb(86, 128, 124);
+    font-family:'Playfair Display', serif;
+    font-style:normal;
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    padding: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family:'Lato', sans-serif;
+    font-weight: 400;
+    color: rgb(197, 194, 187);
+    padding: 2rem; 
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family:'Lato', sans-serif;
+    font-weight: 400;
+    color: rgba(228, 188, 120, 0.76);
+    padding: 1rem; 
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-family:'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(197, 194, 187);
+    padding: 2rem; 
+}
+
+section p{
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    font-size: 1.50rem;
+    line-height: 2.30rem;
+    padding: 2rem;
+    display: flex;
+}
+
+/* HEADER  --- INICIO */ 
+
+header {
+    position: sticky;
+    top: 0%;
+    background-image:url("../imagenes/banner1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 4rem;
+    z-index: 100;
+
+    nav {
+
+        ul{
+
+            li{
+                list-style: none;
+                list-style-type:none;
+
+                a{
+                    text-decoration: none;
+                    color: rgb(165, 99, 99);
+                    font-family:'Lato', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    padding: 1.5rem;
+
+
+                }
+            }
+        }
+    }
+}
+
+/* BOOTSTRAP P/ HEADER*/ 
+
+.navbar-light .navbar-nav .nav-link {
+    color: $rosaestudio;
+    font-family:'Lato', sans-serif;
+    font-weight: bold; 
+    font-size: 1.2rem;
+    padding: 1.5rem;
+}
+
+.navegacionHeader li a:hover { /*CAMBIO COLOR AL PASAR MOUSE MENU NAVEGACION HEADER*/
+    color: $verdeestudio;
+}
+
+/* HEADER  --- FIN */ 
+
+
+
+/* FOOTER --- INICIO */ 
+
+footer {
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                list-style-type:none;
+                a{
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-family:'Lato', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER --- FIN */ 
+
+/* ERROR 404 --- INICIO */ 
+
+main{
+
+    .error {
+
+        h1 {
+            color: $verdeestudio;
+        }
+
+        .error__boton {
+         margin-bottom: 6rem;
+        }
+
+        
+    }
+
+}
+
+
+/* OPERACIONES SASS I */ 
+
+@mixin boton ($colorBoton, $backBoton) {
+    width: 250px;
+    font-size: 15px;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    color: $colorBoton;
+    background-color: $backBoton;
+}
+

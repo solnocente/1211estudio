@@ -1,0 +1,94 @@
+h1 { /* ANIMACIÓN H1 INICIO*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.seccionPresentacion {
+    background-image:url("../imagenes/BackroundSeccionPresentacionIndex_Mesa\ de\ trabajo\ 1\ copia\ 2.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 4rem;
+
+    h2:hover { /*TRANSICION AL PASAR MOUSE X H2 SECCION PRESENTACION*/
+        transition: 3s;
+        font-size: 4.5rem;
+        }
+}
+
+.trabajosInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    gap: 1em;
+
+    img {
+        width: 100% ;
+        height: 100%;
+    }
+}
+
+
+.seccionMarcas{
+    background-color:rgb(86, 128, 124);
+    box-sizing: content-box;
+    height: 35rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        color: ivory;
+    }
+
+    img{
+        padding: 0.5rem;
+    }
+    
+}
+
+.marcasInicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img{
+        margin: 0rem 12rem;
+     }
+     
+}
+
+
+.botonPrimario {
+    @include boton (white, $amarilloestudio)
+}
+
+.botonSecundario {
+    @include boton (white, $rosaestudio) 
+}
+
+$weight: (
+    "light":100,
+    "regular":400,
+    "bold":700
+    );
+
+@each $k, $v in $weight {
+  .type-#{$k}  {
+      font-weight: $v ;
+      font-family: $latofamily;
+  }
+}

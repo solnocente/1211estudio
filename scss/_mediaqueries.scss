@@ -1,0 +1,61 @@
+/* GRIDS --- INICIO*/
+
+@media (max-width: 1024px) {
+
+    .trabajosInicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1em;
+        text-align:center;
+    }
+    
+    .trabajosInicio  img { 
+    width: 100% ;
+    height: 100%;
+    }
+    
+    
+    }
+
+
+@media (max-width: 600px) {
+
+.trabajosInicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    text-align:center;
+}
+
+.proyectoRevistaNativa {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.proyectoEditorialInesLongevial{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+
+.proyectoPackagingSalvaje {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+
+}
+
+
+ /* GRIDS --- FIN*/

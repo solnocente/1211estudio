@@ -1,0 +1,308 @@
+@import "variables";
+@import "fuentes";
+@import "generales";
+@import "index";
+
+/* SECCIÓN: SERVICIOS --- INICIO */
+
+.seccionServicios{
+    text-align: center;
+    padding: 4rem;  
+}
+
+.packs{
+    background-color:rgb(233, 233, 233);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 4rem;
+}
+
+.tiposDePacks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center center;
+    margin: 40px 0;
+
+    li{
+        list-style-type:circle;
+        list-style-position:inside;
+        font-family: 'Lato', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 1.20rem;
+        line-height: 1.7rem; 
+        margin: 1rem;
+    }    
+} 
+
+.packBasico {
+    background-color:rgb(86, 128, 124);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.packPro {
+    background-color:rosybrown ;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.packPremium {
+    background-color:rgb(86, 128, 124);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textoPacks {
+    color: ivory;
+}
+
+
+/* SECCIÓN: SERVICIOS --- FIN*/
+
+
+/* SECCIÓN: PORTFOLIO --- INICIO */ 
+
+.seccionTrabajos{
+    background-color:rgb(86, 128, 124);
+    padding: 4rem;
+
+    h2{
+        color: rgb(255, 255, 255);
+    }
+
+    p{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.proyectoRevistaNativa {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 1em;
+
+    img{
+        width: 100%;
+    }
+
+    h2{
+        text-align: center;
+        padding: 6rem
+    }
+}
+
+.proyectoEditorialInesLongevial{
+    text-align: center;
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+
+    img{
+        width: 100%;
+     }
+}
+
+.proyectoPackagingSalvaje {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+
+    img{
+        width: 100%;
+    }
+
+    h2{
+        text-align: right;
+        padding: 6rem;
+    }
+    
+}
+
+
+/* SECCIÓN: PORTFOLIO --- FIN */
+
+/* SECCIÓN: SOBRE NOSOTROS --- INICIO */
+
+.seccionHola {
+    display:flex;
+    align-items:center;
+    margin: 10%;
+
+    img{
+        height: 400px;
+    }
+}
+
+.hola {
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content:space-around;
+}
+
+.botones {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.seccionComentarios{
+    background-color:rgb(86, 128, 124);
+    color: white;   
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 6rem;
+    align-items: center;
+    border: 10px solid rgba(255, 255, 255, 0.219);
+
+    h2{
+        color: rgb(255, 255, 255);
+    }
+
+    h3{
+        color: rgb(255, 255, 255);
+        font-style: italic;
+    }
+}
+
+.seccionMarcasSobreNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+}
+
+.introMarcasInicioSobreNosotros{
+    flex-direction: row;
+
+}
+
+.marcasInicioSobreNosotros{
+    background-color:rgba(228, 188, 120, 0.534);
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+}
+
+.seccionVideoSobreNosotros{
+    background-color: ivory;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding-top: 4rem;
+}
+
+/* SECCIÓN: SOBRE NOSOTROS --- FIN*/
+
+
+/* SECCIÓN: CONTACTO --- INICIO */
+
+.contactanos{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContacto {
+    background-color:rgb(86, 128, 124);
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    height: 40rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h2{
+        color: rgb(255, 255, 255);
+    }
+
+    div {
+        
+        label {
+            font-size: 1.5rem;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 200;
+            color: rgb(255, 255, 254);
+            padding: 0.5rem; 
+        }
+        
+    }
+
+}
+
+
+.ubicacionEstudio {
+    background-image:url("../imagenes/BackroundSeccionPresentacionIndex_Mesa\ de\ trabajo\ 1\ copia\ 2.png");
+    background-size: cover;
+    padding-top: 4rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* SECCIÓN: CONTACTO --- FIN */
+
+
+/* FOOTER --- INICIO */
+
+footer {
+    background-color: #C8A59A;
+    padding: 4rem;
+}
+
+.navegacionRedes li a {
+    text-decoration: none;
+    color: rgb(141, 83, 83);  
+}
+
+.navegacionRedes li {
+    list-style-type:none;
+    text-align: center;
+}
+
+.desarrolladoPor p {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* FOOTER --- FIN */
+
+@import "mediaqueries"; 
+

@@ -1,0 +1,734 @@
+@charset "UTF-8";
+/* FONTS GOOGLE*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: #C8A59A;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6rem;
+  text-align: left;
+  padding: 2rem;
+  margin-top: 10rem;
+}
+
+h2 {
+  color: #56807c;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #c5c2bb;
+  padding: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: rgba(228, 188, 120, 0.76);
+  padding: 1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #c5c2bb;
+  padding: 2rem;
+}
+
+section p {
+  font-family: 'Lato', sans-serif;
+  color: grey;
+  font-size: 1.50rem;
+  line-height: 2.30rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* HEADER  --- INICIO */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  background-image: url("../imagenes/banner1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 4rem;
+  z-index: 100;
+}
+
+header nav ul li {
+  list-style: none;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #a56363;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+
+/* BOOTSTRAP P/ HEADER*/
+.navbar-light .navbar-nav .nav-link {
+  color: #a56363;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+
+.navegacionHeader li a:hover {
+  /*CAMBIO COLOR AL PASAR MOUSE MENU NAVEGACION HEADER*/
+  color: #56807c;
+}
+
+/* HEADER  --- FIN */
+/* FOOTER --- INICIO */
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer nav ul li {
+  list-style: none;
+  list-style-type: none;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+/* FOOTER --- FIN */
+/* ERROR 404 --- INICIO */
+main .error h1 {
+  color: #56807c;
+}
+
+main .error .error__boton {
+  margin-bottom: 6rem;
+}
+
+/* OPERACIONES SASS I */
+h1 {
+  /* ANIMACIÓN H1 INICIO*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.seccionPresentacion {
+  background-image: url("../imagenes/BackroundSeccionPresentacionIndex_Mesa de trabajo 1 copia 2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 4rem;
+}
+
+.seccionPresentacion h2:hover {
+  /*TRANSICION AL PASAR MOUSE X H2 SECCION PRESENTACION*/
+  -webkit-transition: 3s;
+  transition: 3s;
+  font-size: 4.5rem;
+}
+
+.trabajosInicio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1em;
+}
+
+.trabajosInicio img {
+  width: 100%;
+  height: 100%;
+}
+
+.seccionMarcas {
+  background-color: #56807c;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 35rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionMarcas h2 {
+  color: ivory;
+}
+
+.seccionMarcas img {
+  padding: 0.5rem;
+}
+
+.marcasInicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.marcasInicio img {
+  margin: 0rem 12rem;
+}
+
+.botonPrimario {
+  width: 250px;
+  font-size: 15px;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background-color: rgba(226, 193, 135, 0.76);
+}
+
+.botonSecundario {
+  width: 250px;
+  font-size: 15px;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background-color: #a56363;
+}
+
+.type-light {
+  font-weight: 100;
+  font-family: "Lato", sans-serif;
+}
+
+.type-regular {
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.type-bold {
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+/* SECCIÓN: SERVICIOS --- INICIO */
+.seccionServicios {
+  text-align: center;
+  padding: 4rem;
+}
+
+.packs {
+  background-color: #e9e9e9;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 4rem;
+}
+
+.tiposDePacks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center center;
+      -ms-flex-align: center center;
+          align-items: center center;
+  margin: 40px 0;
+}
+
+.tiposDePacks li {
+  list-style-type: circle;
+  list-style-position: inside;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1.20rem;
+  line-height: 1.7rem;
+  margin: 1rem;
+}
+
+.packBasico {
+  background-color: #56807c;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packPro {
+  background-color: rosybrown;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packPremium {
+  background-color: #56807c;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#textoPacks {
+  color: ivory;
+}
+
+/* SECCIÓN: SERVICIOS --- FIN*/
+/* SECCIÓN: PORTFOLIO --- INICIO */
+.seccionTrabajos {
+  background-color: #56807c;
+  padding: 4rem;
+}
+
+.seccionTrabajos h2 {
+  color: white;
+}
+
+.seccionTrabajos p {
+  color: white;
+}
+
+.proyectoRevistaNativa {
+  padding: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1em;
+}
+
+.proyectoRevistaNativa img {
+  width: 100%;
+}
+
+.proyectoRevistaNativa h2 {
+  text-align: center;
+  padding: 6rem;
+}
+
+.proyectoEditorialInesLongevial {
+  text-align: center;
+  padding: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1em;
+}
+
+.proyectoEditorialInesLongevial img {
+  width: 100%;
+}
+
+.proyectoPackagingSalvaje {
+  padding: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1em;
+}
+
+.proyectoPackagingSalvaje img {
+  width: 100%;
+}
+
+.proyectoPackagingSalvaje h2 {
+  text-align: right;
+  padding: 6rem;
+}
+
+/* SECCIÓN: PORTFOLIO --- FIN */
+/* SECCIÓN: SOBRE NOSOTROS --- INICIO */
+.seccionHola {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10%;
+}
+
+.seccionHola img {
+  height: 400px;
+}
+
+.hola {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.botones {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.seccionComentarios {
+  background-color: #56807c;
+  color: white;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid rgba(255, 255, 255, 0.219);
+}
+
+.seccionComentarios h2 {
+  color: white;
+}
+
+.seccionComentarios h3 {
+  color: white;
+  font-style: italic;
+}
+
+.seccionMarcasSobreNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 4rem;
+}
+
+.introMarcasInicioSobreNosotros {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.marcasInicioSobreNosotros {
+  background-color: rgba(228, 188, 120, 0.534);
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marcasInicioSobreNosotros img {
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.seccionVideoSobreNosotros {
+  background-color: ivory;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4rem;
+}
+
+/* SECCIÓN: SOBRE NOSOTROS --- FIN*/
+/* SECCIÓN: CONTACTO --- INICIO */
+.contactanos {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formContacto {
+  background-color: #56807c;
+  font-family: sans-serif;
+  color: white;
+  height: 40rem;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formContacto h2 {
+  color: white;
+}
+
+.formContacto div label {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #fffffe;
+  padding: 0.5rem;
+}
+
+.ubicacionEstudio {
+  background-image: url("../imagenes/BackroundSeccionPresentacionIndex_Mesa de trabajo 1 copia 2.png");
+  background-size: cover;
+  padding-top: 4rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* SECCIÓN: CONTACTO --- FIN */
+/* FOOTER --- INICIO */
+footer {
+  background-color: #C8A59A;
+  padding: 4rem;
+}
+
+.navegacionRedes li a {
+  text-decoration: none;
+  color: #8d5353;
+}
+
+.navegacionRedes li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.desarrolladoPor p {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* FOOTER --- FIN */
+/* GRIDS --- INICIO*/
+@media (max-width: 1024px) {
+  .trabajosInicio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    text-align: center;
+  }
+  .trabajosInicio img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .trabajosInicio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    text-align: center;
+  }
+  .proyectoRevistaNativa {
+    padding: 6rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+  .proyectoEditorialInesLongevial {
+    padding: 6rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 1em;
+  }
+  .proyectoPackagingSalvaje {
+    padding: 6rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+/* GRIDS --- FIN*/
+/*# sourceMappingURL=style.css.map */
